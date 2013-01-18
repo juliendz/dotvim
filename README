@@ -6,3 +6,9 @@ Create symlinks:
 	ls -s ~/.vim/vimrc ~/.vimrc
 	ls -s ~/.vim/gvimrc ~/.gvimrc
 
+Updating local .vim to latest changes:
+	git pull
+	git submodule init
+	git submodule update
+	
+
