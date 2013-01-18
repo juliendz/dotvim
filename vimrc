@@ -26,3 +26,5 @@ set backupdir=/tmp
 
 " Nerd tree auto refresh
 let NERDTreeChDirMode=2
+
+set guifont=Monospace\ 9
