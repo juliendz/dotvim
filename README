@@ -1,0 +1,7 @@
+Installation:
+
+
+Create symlinks:
+	ls -s ~/.vim/vimrc ~/.vimrc
+	ls -s ~/.vim/gvimrc ~/.gvimrc
+
