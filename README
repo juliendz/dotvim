@@ -11,4 +11,7 @@ Updating local .vim to latest changes:
 	git submodule init
 	git submodule update
 	
+Windows:
+	Copy gvimrc to $VIM/_vimrc
+	
 
