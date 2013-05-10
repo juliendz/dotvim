@@ -9,7 +9,6 @@ call pathogen#helptags()
 
 "Enables tab completion for vim commands
 set nocompatible
-set nospell
 
 set guioptions-=T 				"Disable toolbar
 filetype plugin on 				"Enable filetype plugins
@@ -17,13 +16,14 @@ filetype indent on 				"Enable filetype indent
 set nu 						"Line numbers
 syntax on 					"Enable syntax higlighting
 set autoread 					"Set to auto read when a file is changed from the outside
+set background=light
+colorscheme solarized 				"Set the color scheme
 set autowrite 					"Set to auto write before changing buffers
 set history=1000				"Set history value ( Default is 20 )
 set clipboard=unnamedplus 			"Enable normal clipboard 
 set ffs=unix 					"Set to save with UNIX line endings (LF)
 set spell					"Enable spellchecking
 set backupdir=~/vimswap 			"Set the swap file backup directory
-colorscheme codeschool 				"Set the color scheme
 set incsearch					"Increamental search
 set hlsearch 					"Highlight search terms
 set foldenable					"Auto fold code
@@ -37,3 +37,5 @@ let NERDTreeChDirMode=2 			" Nerd tree auto refresh
 
 :nnoremap <Tab> :bnext<CR>			"Easy buffer switching (next buffer)
 :nnoremap <S-Tab> :bprevious<CR>		"Easy buffer switching (prev buffer)
+
+set nospell
