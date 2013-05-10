@@ -9,6 +9,7 @@ call pathogen#helptags()
 
 "Enables tab completion for vim commands
 set nocompatible
+set nospell
 
 set guioptions-=T 				"Disable toolbar
 filetype plugin on 				"Enable filetype plugins
