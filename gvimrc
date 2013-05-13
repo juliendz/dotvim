@@ -32,10 +32,11 @@ set nowrap					"wrap long lines
 set expandtab					"Tabs are now spaces, not tabs
 set autoindent					"Indent at the same level as the previous line
 set softtabstop=4               		" let backspace delete indent
-
+let g:NERDTreeDirArrows=0
 let NERDTreeChDirMode=2 			" Nerd tree auto refresh
 
 :nnoremap <Tab> :bnext<CR>			"Easy buffer switching (next buffer)
 :nnoremap <S-Tab> :bprevious<CR>		"Easy buffer switching (prev buffer)
+set encoding=utf-8
 
 set nospell
