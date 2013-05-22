@@ -40,3 +40,4 @@ let NERDTreeChDirMode=2 			" Nerd tree auto refresh
 set encoding=utf-8
 
 set nospell
+set guifont=Monospace\ 9 
