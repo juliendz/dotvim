@@ -13,5 +13,18 @@ Updating local .vim to latest changes:
 	
 Windows:
 	Copy gvimrc to $VIM/_vimrc
+
+
+Remove submodule (plugin):
+To remove a submodule you need to:
+    Delete the relevant section from the .gitmodules file.
+    Stage the .gitmodules changes git add .gitmodules
+    Delete the relevant section from .git/config.
+    Run git rm --cached path_to_submodule (no trailing slash).
+    Run rm -rf .git/modules/submodule_name
+    Commit
+    Delete the now untracked submodule files
+    rm -rf path_to_submodule
+
 	
 
