@@ -23,7 +23,7 @@ set history=1000				"Set history value ( Default is 20 )
 set clipboard=unnamedplus 			"Enable normal clipboard 
 set ffs=unix 					"Set to save with UNIX line endings (LF)
 set spell					"Enable spellchecking
-set backupdir=~/vimswap 			"Set the swap file backup directory
+set backupdir=~/.vimswap 			"Set the swap file backup directory
 set incsearch					"Increamental search
 set hlsearch 					"Highlight search terms
 set foldenable					"Auto fold code
@@ -41,3 +41,24 @@ set encoding=utf-8
 
 set nospell
 set guifont=Monospace\ 9 
+
+
+""----- Demu ---""
+" Strip the newline from the end of a string
+function! Chomp(str)
+  return substitute(a:str, '\n$', '', '')
+endfunction
+
+" Find a file and pass it to cmd
+function! DmenuOpen(cmd)
+  let fname = Chomp(system("git ls-files | dmenu -i -l 20 -p " . a:cmd))
+  if empty(fname)
+    return
+  endif
+  execute a:cmd . " " . fname
+endfunction
+
+
+""----- Demu keybindsings ---""
+map <c-t> :call DmenuOpen("tabe")<cr>
+map <c-f> :call DmenuOpen("e")<cr>
