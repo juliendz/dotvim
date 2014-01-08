@@ -62,3 +62,10 @@ endfunction
 ""----- Demu keybindsings ---""
 map <c-t> :call DmenuOpen("tabe")<cr>
 map <c-f> :call DmenuOpen("e")<cr>
+
+"Exuberant ctags path
+let Tlist_Ctags_Cmd='/usr/bin/ctags-exuberant'
+
+let g:indentLine_color_gui = '#808080'
+
+
